@@ -23,9 +23,12 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <Header />
   <main id="main-content" data-layout="index" class="app-layout">
     <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
-      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Server Closet
-      </h1>
+      <p class="my-4 text-lg sm:my-8 sm:text-xl">
+        Homelab tinkering, self-hosting, and infrastructure experiments.
+        From Kubernetes clusters to Pi-holes, Ansible playbooks to CI/CD
+        pipelines — documenting what works, what breaks, and the lessons
+        learned along the way.
+      </p>
       <a
         target="_blank"
         href="/rss.xml"
@@ -40,13 +43,6 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         />
         <span class="sr-only">RSS Feed</span>
       </a>
-
-      <p>
-        A blog about homelab tinkering, self-hosting, and infrastructure
-        experiments. From Kubernetes clusters to Pi-holes, Ansible playbooks
-        to CI/CD pipelines — documenting what works, what breaks, and the
-        lessons learned along the way.
-      </p>
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
