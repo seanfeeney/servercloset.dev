@@ -23,35 +23,26 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
   <Header />
   <main id="main-content" data-layout="index" class="app-layout">
     <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
-      <p class="my-4 text-lg sm:my-8 sm:text-xl">
+      <p class="my-4 sm:my-6 opacity-90">
         Homelab tinkering, self-hosting, and infrastructure experiments.
         From Kubernetes clusters to Pi-holes, Ansible playbooks to CI/CD
         pipelines — documenting what works, what breaks, and the lessons
         learned along the way.
+        <a
+          target="_blank"
+          href="/rss.xml"
+          class="inline-block align-middle ml-1 opacity-75 hover:opacity-100"
+          aria-label="rss feed"
+          title="RSS Feed"
+        >
+          <IconRss
+            width={16}
+            height={16}
+            class="stroke-current stroke-2"
+          />
+          <span class="sr-only">RSS Feed</span>
+        </a>
       </p>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="inline-block"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <IconRss
-          width={20}
-          height={20}
-          class="scale-125 stroke-accent stroke-3 rtl:-rotate-90"
-        />
-        <span class="sr-only">RSS Feed</span>
-      </a>
-      {
-        // only display if at least one social link is enabled
-        SOCIALS.length > 0 && (
-          <div class="mt-4 flex max-sm:flex-col sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
     </section>
 
     {
