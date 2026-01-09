@@ -3,35 +3,21 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Server Closet is a personal blog documenting homelab adventures, self-hosting experiments, and infrastructure tinkering.
 
-![Astro Paper](public/astropaper-og.jpg)
+## What You'll Find Here
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+- **Homelab builds** - Hardware, networking, and server setups
+- **Self-hosting guides** - Running your own services instead of relying on the cloud
+- **Automation** - Ansible playbooks, CI/CD pipelines, and infrastructure as code
+- **Lessons learned** - The inevitable debugging sessions and "aha" moments
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+## The Philosophy
 
-## Features
+There's something deeply satisfying about running your own infrastructure. Whether it's a Pi-hole blocking ads across your network, a media server streaming to any device, or a home automation system that actually works offline - self-hosting puts you in control.
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+This blog is a way to share what works, what doesn't, and the occasional rabbit hole that turns a weekend project into a month-long obsession.
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+## The Stack
 
-and so much more.
-
-## Show your support
-
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+This site is built with [Astro](https://astro.build) and hosted on Cloudflare Pages, deployed automatically via GitHub integration.
