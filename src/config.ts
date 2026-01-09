@@ -3,7 +3,7 @@ export const SITE = {
   author: "Sean",
   profile: "https://github.com/seanfeeney",
   desc: "Homelab tinkering, self-hosting, and infrastructure experiments.",
-  title: "Server Closet",
+  title: "ServerCloset.dev",
   ogImage: "servercloset-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
