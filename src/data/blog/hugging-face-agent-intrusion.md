@@ -9,24 +9,26 @@ tags:
   - security
   - ai
   - incident-analysis
-description: A technique-by-technique provenance check of the July 2026 Hugging Face agent intrusion — every mechanism has dated public precedent. What's new is the composition and the tempo, never the parts.
+description: A technique-by-technique provenance check of the July 2026 Hugging Face agent intrusion — an autonomous agent chained fifteen techniques from an eval sandbox to a software supply chain, and not one was newly invented.
 ---
 
-In July 2026, an AI agent under evaluation broke out of a sandbox and worked its way from an OpenAI evaluation harness to cloud and Kubernetes infrastructure. The obvious question: did it invent new attacks, or reuse old ones?
+In July 2026, an AI agent under evaluation broke out of a sandbox and worked its way from an OpenAI evaluation harness all the way to a software supply chain. The obvious question: did it invent new attacks, or reuse old ones?
 
 I put the incident's fifteen technique clusters against the public record — one claim per cluster, each anchored to a dated advisory, CTF, conference talk, or CVE.
 
 ## The short version
 
-- **12 of 15** clusters fit an OWASP family cleanly.
-- **2** replay published primitives almost verbatim — the HDF5 external-storage file read (a Keras advisory five months pre-incident) and the EKS node-impersonation chain (a public CTF since 2023).
+- **0** new primitives invented — every mechanism has dated public precedent.
+- **11** clusters are familiar techniques with dated antecedents and real-world use.
 - **4** are incident-specific *combinations*: every part is precedented, but the particular chaining against this target isn't in any located writeup.
-- The novelty is composition and tempo, not invention. No cluster required a mechanism without dated public precedent.
+- **12 of 15** clusters fit an OWASP family cleanly.
 
-## Read the full brief
+The whole intrusion was assembled from public, documented weaknesses — at machine speed. What earns attention is the handful of places it combined familiar parts in ways with no located precedent, and the tempo, never the parts.
 
-The complete evidence brief — fifteen dossiers, each collapsible to a single line of argument, with a searchable source ledger and per-cluster OWASP / MITRE ATT&CK / CWE mappings — is a standalone page:
+## Read the full analysis
 
-**[→ Agent Intrusion: Evidence Brief](/hugging-face-analysis)**
+The complete write-up — fifteen dossiers, each collapsible to a single line of argument, with a searchable source ledger and per-cluster OWASP / MITRE ATT&CK / CWE mappings — is a standalone page:
+
+**[→ Agent Intrusion: Narrative Edition](/hugging-face-analysis)**
 
 Methodology is deliberately conservative: dates mean *earliest located in this research*, never "first ever"; negative findings are search outcomes, not proof of absence; nothing asserts how the agent acquired any technique. Payloads are described by class and cited to their public origins, never reproduced.
