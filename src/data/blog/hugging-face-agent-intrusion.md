@@ -27,6 +27,6 @@ I put the incident's fifteen technique clusters against the public record — on
 
 The complete evidence brief — fifteen dossiers, each collapsible to a single line of argument, with a searchable source ledger and per-cluster OWASP / MITRE ATT&CK / CWE mappings — is a standalone page:
 
-**[→ Agent Intrusion: Evidence Brief](/hugging-face-analysis.html)**
+**[→ Agent Intrusion: Evidence Brief](/hugging-face-analysis)**
 
 Methodology is deliberately conservative: dates mean *earliest located in this research*, never "first ever"; negative findings are search outcomes, not proof of absence; nothing asserts how the agent acquired any technique. Payloads are described by class and cited to their public origins, never reproduced.
